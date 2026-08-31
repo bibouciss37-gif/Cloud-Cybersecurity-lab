@@ -9,31 +9,34 @@ Ce projet consiste à mettre en place une architecture de stockage combinant :
 * **XFS** comme système de fichiers
 * **Rocky Linux** comme système d'exploitation
 
+## 🏗️ Architecture
+
 L'architecture utilisée est la suivante :
 
-/dev/sdb ─────┐
-              │
-              ├── RAID 1 ── /dev/md0
-              │
-/dev/sdc ─────┘
+```text
+/dev/sdb (4 Go) ─────┐
                      │
-                     ▼
-                  PV LVM
+                     ├── RAID 1 ── /dev/md0
                      │
-                     ▼
-                  VG LVM
-                  vgdata
-                     │
-                     ▼
-                  LV LVM
-                  lvdata
-                     │
-                     ▼
-                  XFS
-                     │
-                     ▼
-                /mnt/raid1
-
+/dev/sdc (4 Go) ─────┘
+                           │
+                           ▼
+                      PV LVM
+                           │
+                           ▼
+                      VG LVM
+                       vgdata
+                           │
+                           ▼
+                      LV LVM
+                       lvdata
+                           │
+                           ▼
+                         XFS
+                           │
+                           ▼
+                      /mnt/raid1
+```
 ---
 
 # 1. Vérification des disques
