@@ -8,27 +8,24 @@ Une machine **Rocky Linux** a été utilisée comme client. **FileZilla** a ét�
 
 ### Architecture
 
-text:
-┌─────────────────────────┐
-│     Ubuntu Server       │
-│                         │
-│  IP : 192.168.1.100     │
-│                         │
-│       vsftpd            │
-│     Serveur FTP         │
-└────────────┬────────────┘
-             │
-             │ FTP
-             │ Port 21
-             │
-             ▼
-┌─────────────────────────┐
-│      Rocky Linux        │
-│                         │
-│       FileZilla         │
-│      Client FTP         │
-└─────────────────────────┘
-
+                 ┌─────────────────────────┐
+                 │      Ubuntu Server      │
+                 │                         │
+                 │   IP : 192.168.1.100    │
+                 │                         │
+                 │         vsftpd          │
+                 │       Serveur FTP       │
+                 └────────────┬────────────┘
+                              │
+                              │ FTP
+                              │ Port 21
+                              ▼
+                 ┌─────────────────────────┐
+                 │      Rocky Linux       │
+                 │                         │
+                 │        FileZilla        │
+                 │       Client FTP        │
+                 └─────────────────────────┘
 
 ---
 
