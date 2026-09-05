@@ -13,21 +13,26 @@ Ce projet consiste à mettre en place un serveur LDAP sous Linux avec :
 
 ## 🏗️ Architecture
 
+cat >> README.md <<'EOF'
+
+## 🏗️ Architecture
+
+```text
 Rocky Linux
-    │
-    │ Firefox
-    ▼
+│
+│ Firefox
+▼
 lab.local
-    │
-    ▼
+│
+▼
 192.168.1.100
-    │
-    ├── phpLDAPadmin
-    │
-    ▼
+│
+├── phpLDAPadmin
+│
+▼
 OpenLDAP
-    │
-    ▼
+│
+▼
 Base LDAP
 dc=lab,dc=local
 ---
