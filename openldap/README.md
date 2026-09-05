@@ -30,7 +30,6 @@ OpenLDAP
     ▼
 Base LDAP
 dc=lab,dc=local
-
 ---
 
 # 1. Configuration du serveur
