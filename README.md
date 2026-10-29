@@ -17,12 +17,13 @@ Je suis étudiant en Cloud et Cybersécurité. Ce dépôt regroupe mes travaux p
 
 ## Projets réalisés
 
-| Projet        | Description                                    |
-| dns-bind9     | Configuration d'un serveur DNS avec BIND9      |
-| ftp-vsftpd    | Installation et configuration d'un serveur FTP |
-| openldap      | Configuration d'un annuaire LDAP               |
-| raid1-lvm     | Mise en place de RAID 1 et LVM                 |
-| raid1-panne   | Simulation et analyse d'une panne RAID 1       |
+| Projet | Description |
+|---|---|
+| `dns-bind9` | Configuration d'un serveur DNS avec BIND9 |
+| `ftp-vsftpd` | Installation et configuration d'un serveur FTP |
+| `openldap` | Configuration d'un annuaire LDAP |
+| `raid1-lvm` | Mise en place de RAID 1 et LVM |
+| `raid1-panne` | Simulation et analyse d'une panne RAID 1 |
 
 ## Environnement de travail
 
